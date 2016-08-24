@@ -1,0 +1,2 @@
+# appcan_uexWeiXin
+AppCan插件调用微信APP支付功能
