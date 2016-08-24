@@ -2,8 +2,8 @@
 
 /*
    This is NOT a freeware, use is subject to license terms
-   °æÈ¨ËùÓĞ£ºTOMÎ¢ĞÅ www.tomwx.net
-   Î¢ĞÅÖ§¸¶»Øµ÷½Ó¿ÚÎÄ¼ş
+   ç‰ˆæƒæ‰€æœ‰ï¼šTOMå¾®ä¿¡ www.tomwx.net
+   å¾®ä¿¡æ”¯ä»˜å›è°ƒæ¥å£æ–‡ä»¶
 */
 
 define('APPTYPEID', 127);
@@ -32,9 +32,9 @@ $wxpay_mchid        = trim($jyConfig['wxpay_mchid']);
 $wxpay_key          = trim($jyConfig['wxpay_key']);
 $wxpay_appsecret    = trim($jyConfig['love_appsecret']);
 */
-define("TOM_WXPAY_APPID", 'wxe9b9dd9f75b6e248');
-define("TOM_WXPAY_MCHID", '1379908302');
-define("TOM_WXPAY_KEY", "2rRml33JuvFwG0GDw0CPiY0bwtwdQwkw");
+define("TOM_WXPAY_APPID", '');
+define("TOM_WXPAY_MCHID", '');
+define("TOM_WXPAY_KEY", "");
 define("TOM_WXPAY_APPSECRET", "");
 
 include DISCUZ_ROOT.'./source/plugin/tom_love/wxpay/lib/WxPay.Api.php';
@@ -58,7 +58,7 @@ function dump_log($data){
 			chmod($logDir, 0777); 
 		}
     $file = DISCUZ_ROOT."./source/plugin/tom_love/logs/".date("Y-m-d").".wxapppay.log";
-    file_put_contents($file,date("Y-m-d H:i:s").":¡¾".json_encode($data)."¡¿\n",FILE_APPEND);
+    file_put_contents($file,date("Y-m-d H:i:s").":ã€".json_encode($data)."ã€‘\n",FILE_APPEND);
 }
 
 
